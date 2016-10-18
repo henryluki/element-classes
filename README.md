@@ -1,7 +1,7 @@
 # element-classes
 A light weight way to add or remove classes on a HTML element
 
-### How to use
+## How to use
 ```
 import ElementClasses from './elementClasses'
 
@@ -10,28 +10,30 @@ let elem = new ElementClasses(element)
 
 ```
 
-### Methods
+## Methods
 
-add class for this element if this element does not has this className
+### addClass(className)
 
-- `addClass(className)`
+Add class for this element if this element does not has this className
 
-remove class from this element if this element has this className
+### removeClass(className)
 
-- `removeClass(className)`
+Remove class from this element if this element has this className
 
-if this className does not exit, add this className, otherwise remove this className
+### toggleClass(className)
 
-- `toggleClass(className)`
+If this className does not exit, add this className, otherwise remove this className
 
-check this className eixts or not
+### hasClass(className)
 
-- `hasClass(className)`
+Check this className exits or not
 
-### Plus
+
+## Plus
 
 - Chain
 
 ` elem.addClass("hidden").addClass("disappear")...`
+
 
 
